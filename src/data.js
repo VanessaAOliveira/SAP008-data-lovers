@@ -9,7 +9,15 @@ export const filterOrder = (data) => {
     }
     )
   };
+
+
+
+
   
-  export const filterStatus = () => {
-    return 'OMG';
-  };
+  export const filterStatus = (characters, deadAlive) => {
+    const results = characters.filter((item) => {
+        if (deadAlive === item.status)
+        return item.status === deadAlive
+      })
+      return results
+    };

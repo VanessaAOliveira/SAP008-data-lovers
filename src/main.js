@@ -1,4 +1,4 @@
-import {} from './data.js';
+import {filterStatus} from './data.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
@@ -13,11 +13,11 @@ function printarCards(data) {
             <h3>${item.name}</h3>
         </div>
         <div class="txt-card"> 
-        <h4>${item.gender}</h4> 
-        <h4>${item.species}</h4>
-        <h4>${item.status}</h4>
-        <h4>${item.origin.name}</h4>
-        <h4>${item.location.name}</h4>
+        <p>${item.gender}</p> 
+        <p>${item.species}</p>
+        <p>${item.status}</p>
+        <p>${item.origin.name}</p>
+        <p>${item.location.name}</p>
 
         </div>
     </div>
@@ -30,6 +30,10 @@ function printarCards(data) {
 printarCards(data.results);
 
 
+const statusFilter = document.getElementById("status-filter");
+statusFilter.addEventListener("change", function (event){
 
-
+  const statusCards = filterStatus(data.results, event.target.value);
+  printarCards(statusCards);
+})
 
