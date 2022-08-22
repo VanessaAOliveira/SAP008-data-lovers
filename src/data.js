@@ -1,9 +1,15 @@
-// estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
+export const filterOrder = (data) => {
+    data.sort(function(a, b) {
+        if (a.name < b.name) {
+            return -1
+        } else {
+            return true
+        }
+    }
+    )
+  };
+  
+  export const filterStatus = () => {
+    return 'OMG';
+  };

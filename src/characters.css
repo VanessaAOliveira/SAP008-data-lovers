@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+html, body {
+    height: 100%;
+    background: #090a0f;
+}
+
+img {
+    width: 80%;
+    margin-left: 10rem;
+    height: 280px;
+}
+
+
+.menu {
+    text-align: center;
+    font-family: "Architects Daughter", cursive;
+}
+
+select {
+    border-radius: 30px;
+    border: none;
+    background-color: #8CEF6A;
+    padding: 10px;
+    text-align: center;
+    margin: 2rem;
+    margin-top: 1rem;
+}
+#clean {
+    border-radius: 30px;
+    padding: 10px;
+    width: 100px;
+    background-color: #8CEF6A;
+    border: none;
+}
+
+.titulo-2 {
+    text-align: center;
+    color: white;
+    font-family: "Architects Daughter", cursive;
+}
+
+#container-cards {
+    width: 20%;
+}
+.names {
+    color: white;
+    font-family: "Architects Daughter", cursive;
+    text-align: center;
+}
+.txt-card {
+    color: white;
+    font-family: "Architects Daughter", cursive;
+}

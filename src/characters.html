@@ -1,15 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head> 
-  <body>
-    <h1>Infos R&M</h1>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personagens - Rick and Morty</title>
+  <link rel="stylesheet" href="characters.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap">
+</head>
+
+<body>
+  <header>
+    <img src="logo.eab63707.png">
+  </header>
+
+  <section>
+
+    <form class="menu">
+      <select name="filter" id="order-filter">
+        <option value="" selected disabled>Ordenar</option>
+        <option value="az">A-Z</option>
+        <option value="za">Z-A</option>
+      </select>
+      <select name="filter" id="status-filter">
+        <option value="" selected disabled>Status</option>
+        <option value="Alive">Vivo</option>
+        <option value="Dead">Morto</option>
+        <option value="Unknown">Desconhecido</option>
+      </select>
+      <select name="filter" id="origin-filter">
+        <option value="origin" selected disabled>Origem</option>
+        <option value="origem-2">Sol Berrante</option>
+        <option value="origem-3">Alphabetrium</option>
+        <option value="origem-4">Squanch</option>
+      </select>
+      <button id="clean" type="reset">Limpar</button>
+
+    </form>
+
+  </section>
+
+  <main id="container-cards">
+
+  </main>
 
 
-      
-    <script src="main.js" type="module"></script>
-  </body>
+<script src="main.js" type="module"></script>
+
+</body>
+
 </html>
